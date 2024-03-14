@@ -63,3 +63,6 @@
 [submodule "Tweaks/YTSpeed"]
 	path = Tweaks/YTSpeed
 	url = https://github.com/therealFoxster/YTSpeed.git
+[submodule "Tweaks/YTNoTracking"]
+	path = Tweaks/YTNoTracking
+	url = https://github.com/arichornlover/YTNoTracking.git
