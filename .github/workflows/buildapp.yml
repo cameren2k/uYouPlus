@@ -44,7 +44,7 @@ concurrency:
 jobs:
   build:
     name: Build uYouPlus
-    runs-on: macos-latest
+    runs-on: macos-11
     permissions:
       contents: write
 
