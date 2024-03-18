@@ -66,3 +66,9 @@
 [submodule "Tweaks/YouGroupSettings"]
 	path = Tweaks/YouGroupSettings
 	url = https://github.com/PoomSmart/YouGroupSettings.git
+[submodule "YTNoTracking"]
+	path = YTNoTracking
+	url = https://github.com/arichornlover/YTNoTracking.git
+[submodule "Tweaks/YTNoTracking"]
+	path = Tweaks/YTNoTracking
+	url = https://github.com/arichornlover/YTNoTracking.git
