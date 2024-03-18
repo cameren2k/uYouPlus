@@ -63,12 +63,9 @@
 [submodule "Tweaks/YTSpeed"]
 	path = Tweaks/YTSpeed
 	url = https://github.com/therealFoxster/YTSpeed.git
-<<<<<<< HEAD
 [submodule "Tweaks/YouGroupSettings"]
 	path = Tweaks/YouGroupSettings
 	url = https://github.com/PoomSmart/YouGroupSettings.git
-=======
->>>>>>> 8318070c5ede22b9e6a72f2fcadcc726772d890a
 [submodule "Tweaks/YTNoTracking"]
 	path = Tweaks/YTNoTracking
 	url = https://github.com/arichornlover/YTNoTracking.git
