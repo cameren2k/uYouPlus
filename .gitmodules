@@ -69,3 +69,6 @@
 [submodule "Tweaks/YTNoTracking"]
 	path = Tweaks/YTNoTracking
 	url = https://github.com/arichornlover/YTNoTracking.git
+[submodule "Tweaks/youtube-native-share"]
+	path = Tweaks/youtube-native-share
+	url = https://github.com/jkhsjdhjs/youtube-native-share.git
