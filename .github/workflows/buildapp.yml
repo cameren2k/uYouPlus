@@ -55,15 +55,7 @@ jobs:
           path: main
           submodules: recursive
 
-      - name: Caching brew dependencies
-          id: brew_cache
-          uses: tecolicom/actions-use-homebrew-tools@v1.2
-        with:
-          tools: ldid dpkg make
-          cache: yes
-
       - name: Install Dependencies
-        if: steps.brew_cache.outputs.cache-hit != 'true'
         run: brew install ldid dpkg make
 
       - name: Set PATH environment variable
