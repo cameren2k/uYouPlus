@@ -96,34 +96,6 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 }
 %end
 
-static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *identifiers) {
-    for (id child in [nodeController children]) {
-        if ([child isKindOfClass:%c(ELMNodeController)]) {
-            NSArray <ELMComponent *> *elmChildren = [(ELMNodeController *)child children];
-            for (ELMComponent *elmChild in elmChildren) {
-                for (NSString *identifier in identifiers) {
-                    if ([[elmChild description] containsString:identifier])
-                        return YES;
-                }
-            }
-        }
-
-        if ([child isKindOfClass:%c(ASNodeController)]) {
-            ASDisplayNode *childNode = ((ASNodeController *)child).node; // ELMContainerNode
-            NSArray *yogaChildren = childNode.yogaChildren;
-            for (ASDisplayNode *displayNode in yogaChildren) {
-                if ([identifiers containsObject:displayNode.accessibilityIdentifier])
-                    return YES;
-            }
-
-            return findCell(child, identifiers);
-        }
-
-        return NO;
-    }
-    return NO;
-}
-
 %hook ASCollectionView
 
 - (CGSize)sizeForElement:(ASCollectionElement *)element {
