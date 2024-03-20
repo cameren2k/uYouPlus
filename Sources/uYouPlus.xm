@@ -72,6 +72,58 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
     return NO;
 }
 
+// Hide the (Connect / Save) Buttons under the Video Player - 17.x.x and up - @PoomSmart (inspired by @arichornlover)
+%hook _ASDisplayView
+- (void)layoutSubviews {
+    %orig;
+    BOOL hideConnectButton = IS_ENABLED(@"hideConnectButton_enabled");
+//    BOOL hideShareButton = IS_ENABLED(@"hideShareButton_enabled"); // OLD
+//    BOOL hideRemixButton = IS_ENABLED(@"hideRemixButton_enabled"); // OLD
+//    BOOL hideThanksButton = IS_ENABLED(@"hideThanksButton_enabled"); // OLD
+//    BOOL hideAddToOfflineButton = IS_ENABLED(@"hideAddToOfflineButton_enabled"); // OLD
+//    BOOL hideClipButton = IS_ENABLED(@"hideClipButton_enabled"); // OLD
+    BOOL hideSaveToPlaylistButton = IS_ENABLED(@"hideSaveToPlaylistButton_enabled");
+
+    for (UIView *subview in self.subviews) {
+        if ([subview.accessibilityLabel isEqualToString:@"connect account"]) {
+            subview.hidden = hideConnectButton;
+ //         subview.frame = hideConnectButton ? CGRectZero : subview.frame;
+        } else if ([subview.accessibilityLabel isEqualToString:@"Save to playlist"]) {
+            subview.hidden = hideSaveToPlaylistButton;
+ //         subview.frame = hideSaveToPlaylistButton ? CGRectZero : subview.frame;
+        }
+    }
+}
+%end
+
+static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *identifiers) {
+    for (id child in [nodeController children]) {
+        if ([child isKindOfClass:%c(ELMNodeController)]) {
+            NSArray <ELMComponent *> *elmChildren = [(ELMNodeController *)child children];
+            for (ELMComponent *elmChild in elmChildren) {
+                for (NSString *identifier in identifiers) {
+                    if ([[elmChild description] containsString:identifier])
+                        return YES;
+                }
+            }
+        }
+
+        if ([child isKindOfClass:%c(ASNodeController)]) {
+            ASDisplayNode *childNode = ((ASNodeController *)child).node; // ELMContainerNode
+            NSArray *yogaChildren = childNode.yogaChildren;
+            for (ASDisplayNode *displayNode in yogaChildren) {
+                if ([identifiers containsObject:displayNode.accessibilityIdentifier])
+                    return YES;
+            }
+
+            return findCell(child, identifiers);
+        }
+
+        return NO;
+    }
+    return NO;
+}
+
 %hook ASCollectionView
 
 - (CGSize)sizeForElement:(ASCollectionElement *)element {
