@@ -81,10 +81,6 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
         if (IS_ENABLED(@"hideRemixButton_enabled") && findCell(nodeController, @[@"id.video.remix.button"])) {
             return CGSizeZero;
         }
-       
-	if (IS_ENABLED(@"hideThanksButton_enabled") && findCell(nodeController, @[@"Thanks"])) {
-            return CGSizeZero;
-        }
 
         if (IS_ENABLED(@"hideClipButton_enabled") && findCell(nodeController, @[@"clip_button.eml"])) {
             return CGSizeZero;
