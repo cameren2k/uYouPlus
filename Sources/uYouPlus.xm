@@ -72,57 +72,21 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
     return NO;
 }
 
-// Hide the (Connect / Save) Buttons under the Video Player - 17.x.x and up - @PoomSmart (inspired by @arichornlover)
-%hook _ASDisplayView
-- (void)layoutSubviews {
-    %orig;
-    BOOL hideConnectButton = IS_ENABLED(@"hideConnectButton_enabled");
-//    BOOL hideShareButton = IS_ENABLED(@"hideShareButton_enabled"); // OLD
-//    BOOL hideRemixButton = IS_ENABLED(@"hideRemixButton_enabled"); // OLD
-//    BOOL hideThanksButton = IS_ENABLED(@"hideThanksButton_enabled"); // OLD
-//    BOOL hideAddToOfflineButton = IS_ENABLED(@"hideAddToOfflineButton_enabled"); // OLD
-//    BOOL hideClipButton = IS_ENABLED(@"hideClipButton_enabled"); // OLD
-    BOOL hideSaveToPlaylistButton = IS_ENABLED(@"hideSaveToPlaylistButton_enabled");
-
-    for (UIView *subview in self.subviews) {
-        if ([subview.accessibilityLabel isEqualToString:@"connect account"]) {
-            subview.hidden = hideConnectButton;
- //         subview.frame = hideConnectButton ? CGRectZero : subview.frame;
-        } else if ([subview.accessibilityLabel isEqualToString:@"Save to playlist"]) {
-            subview.hidden = hideSaveToPlaylistButton;
- //         subview.frame = hideSaveToPlaylistButton ? CGRectZero : subview.frame;
-        }
-    }
-}
-%end
-
 %hook ASCollectionView
 
 - (CGSize)sizeForElement:(ASCollectionElement *)element {
     if ([self.accessibilityIdentifier isEqualToString:@"id.video.scrollable_action_bar"]) {
         ASCellNode *node = [element node];
         ASNodeController *nodeController = [node controller];
-        if (IS_ENABLED(@"hideShareButton_enabled") && findCell(nodeController, @[@"id.video.share.button"])) {
-            return CGSizeZero;
-        }
-
         if (IS_ENABLED(@"hideRemixButton_enabled") && findCell(nodeController, @[@"id.video.remix.button"])) {
             return CGSizeZero;
         }
-
-        if (IS_ENABLED(@"hideThanksButton_enabled") && findCell(nodeController, @[@"Thanks"])) {
-            return CGSizeZero;
-        }
-
+        
         if (IS_ENABLED(@"hideClipButton_enabled") && findCell(nodeController, @[@"clip_button.eml"])) {
             return CGSizeZero;
         }
-
+        
         if (IS_ENABLED(@"hideDownloadButton_enabled") && findCell(nodeController, @[@"id.ui.add_to.offline.button"])) {
-            return CGSizeZero;
-        }
-
-        if (IS_ENABLED(@"hideCommentSection_enabled") && findCell(nodeController, @[@"id.ui.carousel_header"])) {
             return CGSizeZero;
         }
     }
