@@ -170,6 +170,7 @@ extern NSBundle *uYouPlusBundle();
     SWITCH_ITEM(LOC(@"HIDE_REMIX_BUTTON"), LOC(@"HIDE_REMIX_BUTTON_DESC"), @"hideRemixButton_enabled");
     SWITCH_ITEM(LOC(@"HIDE_CLIP_BUTTON"), LOC(@"HIDE_CLIP_BUTTON_DESC"), @"hideClipButton_enabled");
     SWITCH_ITEM(LOC(@"Hide the Save to playlist Button under player"), @"hideSaveToPlaylistButton_enabled");
+    SWITCH_ITEM(LOC(@"Hide the Share Button under player"), @"hideShareButton_enabled");
     SWITCH_ITEM(LOC(@"Hide the Thanks Button under player"), @"hideThanksButton_enabled");
     SWITCH_ITEM(LOC(@"HIDE_DOWNLOAD_BUTTON"), LOC(@"HIDE_DOWNLOAD_BUTTON_DESC"), @"hideDownloadButton_enabled");
     SWITCH_ITEM(LOC(@"Hide the Save to playlist Button under player"), @"hideSaveToPlaylistButton_enabled");
