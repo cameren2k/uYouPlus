@@ -60,7 +60,7 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
             ASDisplayNode *childNode = ((ASNodeController *)child).node; // ELMContainerNode
             NSArray *yogaChildren = childNode.yogaChildren;
             for (ASDisplayNode *displayNode in yogaChildren) {
-                if ([identifiers containsObject:displayNode.accessibilityIdentifier])
+                if ([identifiers containsObject:displayNode.accessibilityIdentifier] || [identifiers containsObject:displayNode.accessibilityLabel])
                     return YES;
             }
 
