@@ -98,7 +98,7 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
             return CGSizeZero;
         }
 
-        if (IS_ENABLED(@"hideSaveToPlaylistSection_enabled") && findCell(nodeController, @[@"Save to playlist"])) {
+        if (IS_ENABLED(@"hideSaveToPlaylistSectionButton_enabled") && findCell(nodeController, @[@"Save to playlist"])) {
             return CGSizeZero;
         }
     }
