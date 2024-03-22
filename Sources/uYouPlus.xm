@@ -98,6 +98,10 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
             return CGSizeZero;
         }
 
+	if (IS_ENABLED(@"hideCommentSection_enabled") && findCell(nodeController, @[@"id.ui.video_metadta_carousel"])) {
+	    return CGSizeZero;
+	}
+
         if (IS_ENABLED(@"hideSaveToPlaylistButton_enabled") && findCell(nodeController, @[@"Save to playlist"])) {
             return CGSizeZero;
         }
