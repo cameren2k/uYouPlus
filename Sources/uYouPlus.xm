@@ -98,7 +98,7 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
             return CGSizeZero;
         }
 
-	if (IS_ENABLED(@"hideCommentSection_enabled") && findCell(nodeController, @[@"id.ui.video_metadta_carousel"])) {
+	if (IS_ENABLED(@"hideCommentSection_enabled") && findCell(nodeController, @[@"id.ui.video_metadata_carousel"])) {
 	    return CGSizeZero;
 	}
 
