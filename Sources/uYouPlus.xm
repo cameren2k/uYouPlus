@@ -94,13 +94,13 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
             return CGSizeZero;
         }
 
-         if (IS_ENABLED(@"hideDownloadButton_enabled") && findCell(nodeController, @[@"id.ui.add_to.offline.button"])) {
+        if (IS_ENABLED(@"hideDownloadButton_enabled") && findCell(nodeController, @[@"id.ui.add_to.offline.button"])) {
             return CGSizeZero;
         }
 
 	    if (IS_ENABLED(@"hideReportButton_enabled") && findCell(nodeController, @[@"Report"])) {
 	        return CGSizeZero;
-	    }
+        }
 
         if (IS_ENABLED(@"hideSaveToPlaylistButton_enabled") && findCell(nodeController, @[@"Save to playlist"])) {
             return CGSizeZero;
