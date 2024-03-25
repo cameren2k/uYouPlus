@@ -98,7 +98,7 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
             return CGSizeZero;
         }
 
-	    if (IS_ENABLED(@"hideReportButton_enabled") && findCell(nodeController, @[@"Report"])) {
+        if (IS_ENABLED(@"hideReportButton_enabled") && findCell(nodeController, @[@"Report"])) {
 	        return CGSizeZero;
         }
 
