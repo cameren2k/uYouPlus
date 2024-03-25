@@ -244,9 +244,9 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 // Hide upper bar
 %group gHideChipBar
 %hook YTMySubsFilterHeaderView 
-- (void)setChipFilterView:(id)arg1 { %orig(nil); }
+- (void)setChipFilterView:(id)arg1 {}
 
-- (void)setChannelFilterView:(id)arg1 { %orig(nil); }
+- (void)setChannelFilterView:(id)arg1 {}
 %end
 
 %hook YTHeaderContentComboView
