@@ -247,6 +247,16 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 - (void)setChipFilterView:(id)arg1 {}
 %end
 
+%hook YTChipCloudCell
+- (void)setHidden:(BOOL)hidden {
+    %orig(YES);
+}
+
+- (BOOL)hidden {
+    return YES;
+}
+%end
+
 %hook YTHeaderContentComboView
 - (void)enableSubheaderBarWithView:(id)arg1 {}
 %end
