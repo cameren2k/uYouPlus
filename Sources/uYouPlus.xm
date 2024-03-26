@@ -248,9 +248,13 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 %end
 
 %hook YTChipCloudCell
+- (void)didMoveToWindow {
+    %orig;
+    self.hidden = YES
+}
 - (void)setHidden:(BOOL)hidden {
     %orig(YES);
-}
+} 
 
 - (BOOL)hidden {
     return YES;
