@@ -243,11 +243,11 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 
 // Sticky Navigation bar
 
-// %hook YTHeaderView
-// - (BOOL)stickyNavHeaderEnabled { 
-//    return IS_ENABLED(@"stickyNavHeader_enabled") ? YES : %orig;
-// }
-// %end
+ %hook YTHeaderView
+ - (BOOL)stickyNavHeaderEnabled { 
+    return IS_ENABLED(@"stickyNavHeader_enabled") ? YES : %orig;
+ }
+ %end
 
 // Hide upper bar
 %group gHideChipBar
