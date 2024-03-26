@@ -242,7 +242,6 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 %end
 
 // Sticky Navigation bar
-
 %hook YTHeaderView
 - (BOOL)stickyNavHeaderEnabled { 
     return IS_ENABLED(@"stickyNavHeader_enabled") ? YES : %orig;
