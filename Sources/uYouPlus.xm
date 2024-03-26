@@ -243,12 +243,10 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 
 // Stick Navigation bar
 
-%group gStickyNavHeader
 %hook YTHeaderView
 - (BOOL)stickyNavHeaderEnabled { 
-    return YES; 
-} 
-%end
+    return IS_ENABLED(@"stockVolumestickyNavHeader_enabled") ? YES : %orig;
+}
 %end
 
 // Hide upper bar
