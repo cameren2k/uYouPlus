@@ -306,7 +306,6 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 - (BOOL)stickyNavHeaderEnabled { return YES; } 
 %end
 %end
-%end
 
 # pragma mark - Other hooks
 
