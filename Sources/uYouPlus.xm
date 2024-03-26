@@ -241,6 +241,13 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 }
 %end
 
+// Stick Navigation bar
+
+%group gStickyNavHeader
+%hook YTHeaderView
+- (BOOL)stickyNavHeaderEnabled { return YES; } 
+%end
+
 // Hide upper bar
 %group gHideChipBar
 %hook YTMySubsFilterHeaderView 
@@ -298,12 +305,6 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 - (long long)assetIdiom {
     return YES;
 } 
-%end
-%end
-
-%group gStickyNavigationBar
-%hook YTHeaderView
-- (BOOL)stickyNavHeaderEnabled { return YES; } 
 %end
 %end
 
