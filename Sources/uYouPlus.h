@@ -35,6 +35,10 @@
 - (void)confirmAlertDidPressConfirm;
 @end
 
+// Hides chip view in recommended videos
+@interface YTChipCloudCell : UICollectionViewCell
+@end
+
 // Hide iSponsorBlock
 @interface YTRightNavigationButtons : UIView
 @property (nonatomic, readwrite, strong) UIView *sponsorBlockButton;
