@@ -245,7 +245,10 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 
 %group gStickyNavHeader
 %hook YTHeaderView
-- (BOOL)stickyNavHeaderEnabled { return YES; } 
+- (BOOL)stickyNavHeaderEnabled { 
+    return YES; 
+} 
+%end
 %end
 
 // Hide upper bar
