@@ -253,6 +253,7 @@ static BOOL findCell(ASNodeController *nodeController, NSArray <NSString *> *ide
 %hook YTMySubsFilterHeaderView 
 - (void)setChipFilterView:(id)arg1 {}
 %end
+%end
 
 %hook YTChipCloudCell
 - (void)didMoveToWindow {
