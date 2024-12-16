@@ -71,3 +71,6 @@
 [submodule "Tweaks/YouChooseQuality"]
 	path = Tweaks/YouChooseQuality
 	url = https://github.com/PoomSmart/YouChooseQuality.git
+[submodule "Tweaks/YouSpeed"]
+	path = Tweaks/YouSpeed
+	url = https://github.com/PoomSmart/YouSpeed

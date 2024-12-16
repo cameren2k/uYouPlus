@@ -39,6 +39,13 @@ body:
 
 - type: textarea
   attributes:
+    label: YouTube version
+    description: _What is the version of the YouTube app in your IPA?_
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
     label: Describe the issue
     description: _Please attach videos or screenshots if possible_
   validations:
