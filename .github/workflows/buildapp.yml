@@ -70,7 +70,7 @@ jobs:
         run: echo "$(brew --prefix make)/libexec/gnubin" >> $GITHUB_PATH 
    
       - name: Setup Theos
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4.3.0
         with:
           repository: theos/theos
           ref: master
@@ -79,7 +79,7 @@ jobs:
       
       - name: Caching SDK
         id: SDK
-        uses: actions/cache@v4.1.2
+        uses: actions/cache@v4.3.0
         env:
           cache-name: iOS-16.5-SDK
         with:
@@ -143,7 +143,7 @@ jobs:
    
       - name: Upload Artifact
         if: ${{ inputs.upload_artifact }}
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         env:
           UYOU_VERSION: ${{ inputs.uyou_version }}
           YOUTUBE_VERSION: ${{ steps.prepare_youtube.outputs.youtube_version }}
