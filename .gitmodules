@@ -74,3 +74,6 @@
 [submodule "Tweaks/YouSpeed"]
 	path = Tweaks/YouSpeed
 	url = https://github.com/PoomSmart/YouSpeed
+[submodule "Tweaks/YTVideoErrorAlert"]
+	path = Tweaks/YTVideoErrorAlert
+	url = https://github.com/PoomSmart/YTVideoErrorAlert.git
