@@ -77,3 +77,6 @@
 [submodule "Tweaks/YTVideoErrorAlert"]
 	path = Tweaks/YTVideoErrorAlert
 	url = https://github.com/PoomSmart/YTVideoErrorAlert.git
+[submodule "Tweaks/YouTimeStamp"]
+	path = Tweaks/YouTimeStamp
+	url = https://github.com/aricloverEXALT/YouTimeStamp.git
