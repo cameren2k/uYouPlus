@@ -80,3 +80,6 @@
 [submodule "Tweaks/YouTimeStamp"]
 	path = Tweaks/YouTimeStamp
 	url = https://github.com/aricloverEXALT/YouTimeStamp.git
+[submodule "Tweaks/PSHeader"]
+	path = Tweaks/PSHeader
+	url = https://github.com/PoomSmart/PSHeader
