@@ -80,3 +80,6 @@
 [submodule "Tweaks/PSHeader"]
 	path = Tweaks/PSHeader
 	url = https://github.com/PoomSmart/PSHeader
+[submodule "Tweaks/YouSlider"]
+	path = Tweaks/YouSlider
+	url = https://github.com/PoomSmart/YouSlider
