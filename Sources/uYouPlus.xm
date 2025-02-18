@@ -304,13 +304,13 @@ YTMainAppControlsOverlayView *controlsOverlayView;
 // Hide "Play next in queue" - qnblackcat/uYouPlus#1138
 %hook YTMenuItemVisibilityHandler
 - (BOOL)shouldShowServiceItemRenderer:(YTIMenuConditionalServiceItemRenderer *)renderer {
-    return IS_ENABLED(kHidePlayNextInQueue) && renderer.icon.iconType == YT_QUEUE_PLAY_NEXT && renderer.secondaryIcon.iconType == YT_PREMIUM_STANDALONE ? NO : %orig;
+    return IS_ENABLED(kHidePlayNextInQueue) && renderer.icon.iconType == YT_QUEUE_PLAY_NEXT ? NO : %orig;
 }
 %end
 
 %hook YTMenuItemVisibilityHandlerImpl
 - (BOOL)shouldShowServiceItemRenderer:(YTIMenuConditionalServiceItemRenderer *)renderer {
-    return IS_ENABLED(kHidePlayNextInQueue) && renderer.icon.iconType == YT_QUEUE_PLAY_NEXT && renderer.secondaryIcon.iconType == YT_PREMIUM_STANDALONE ? NO : %orig;
+    return IS_ENABLED(kHidePlayNextInQueue) && renderer.icon.iconType == YT_QUEUE_PLAY_NEXT ? NO : %orig;
 }
 %end
 
