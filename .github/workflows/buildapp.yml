@@ -8,7 +8,7 @@ on:
     inputs:
       uyou_version:
         description: "The version of uYou"
-        default: "3.0.4"
+        default: "3.0.3"
         required: true
         type: string
       decrypted_youtube_url:
