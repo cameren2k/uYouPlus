@@ -97,7 +97,7 @@ NSArray *copyKeys = @[
     @"YTVideoOverlay-YouMute-Position", @"YTVideoOverlay-YouQuality-Position",
     // YouPiP Keys - https://github.com/PoomSmart/YouPiP/blob/main/Header.h
     @"YouPiPPosition", @"CompatibilityModeKey", @"PiPActivationMethodKey", @"PiPActivationMethod2Key", 
-    @"NoMiniPlayerPiPKey", @"NonBackgroundableKey",
+    @"PiPAllActivationMethodKey", @"NoMiniPlayerPiPKey", @"NonBackgroundableKey",
     // YouSlider Keys - https://github.com/PoomSmart/YouSlider/blob/main/Settings.h
     @"YouSliderEnabled", @"YSSliderColor", @"YSSliderColorValue", @"YSScrubberColor", @"YSScrubberColorValue", @"YSScrubberSize",
     // YTUHD Keys - https://github.com/PoomSmart/YTUHD/blob/master/Header.h
