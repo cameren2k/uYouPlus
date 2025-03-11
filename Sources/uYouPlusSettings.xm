@@ -80,16 +80,16 @@ NSArray *copyKeys = @[
     // DontEatMyContent Keys - https://github.com/therealFoxster/DontEatMyContent/blob/master/Tweak.h
     @"DEMC_enabled", @"DEMC_colorViewsEnabled", @"DEMC_safeAreaConstant", @"DEMC_disableAmbientMode", 
     @"DEMC_limitZoomToFill", @"DEMC_enableForAllVideos",
-		// iSponsorBlock Keys
-		kIsEnabled,
-		kCategorySettings,
-		kMinimumDuration,
-		kShowSkipNotice,
-		kShowButtonsInPlayer,
-		kHideStartEndButtonInPlayer,
-		kShowModifiedTime,
-		kSkipAudioNotification,
-		kSkipNoticeDuration,
+    // iSponsorBlock Keys
+    kIsEnabled,
+    kCategorySettings,
+    kMinimumDuration,
+    kShowSkipNotice,
+    kShowButtonsInPlayer,
+    kHideStartEndButtonInPlayer,
+    kShowModifiedTime,
+    kSkipAudioNotification,
+    kSkipNoticeDuration,
     // Return YouTube Dislikes Keys - https://github.com/PoomSmart/Return-YouTube-Dislikes/blob/main/TweakSettings.h
     @"RYD-ENABLED", @"RYD-VOTE-SUBMISSION", @"RYD-EXACT-LIKE-NUMBER", @"RYD-EXACT-NUMBER",
     // YTVideoOverlay Keys - https://github.com/therealFoxster/DontEatMyContent/blob/master/Tweak.h
