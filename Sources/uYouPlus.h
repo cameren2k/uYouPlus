@@ -6,8 +6,6 @@
 #import <substrate.h>
 #import <rootless.h>
 
-#import <iSponsorBlock/Headers/iSponsorBlock.h>
-
 #import "uYouPlusThemes.h" // Hide "Buy Super Thanks" banner (_ASDisplayView)
 #import <YouTubeHeader/YTAppDelegate.h> // Activate FLEX
 #import <YouTubeHeader/YTIMenuConditionalServiceItemRenderer.h>
