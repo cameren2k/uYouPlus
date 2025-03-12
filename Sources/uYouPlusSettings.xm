@@ -1,16 +1,16 @@
 #import "uYouPlusSettings.h"
 
-extern BOOL kIsEnabled;
-extern NSString *kUserID;
-extern NSDictionary *kCategorySettings;
-extern CGFloat kMinimumDuration;
-extern BOOL kShowSkipNotice;
-extern BOOL kShowButtonsInPlayer;
-extern BOOL kHideStartEndButtonInPlayer;
-extern BOOL kShowModifiedTime;
-extern BOOL kSkipAudioNotification;
-extern BOOL kEnableSkipCountTracking;
-extern CGFloat kSkipNoticeDuration;
+BOOL kIsEnabled;
+NSString *kUserID;
+NSDictionary *kCategorySettings;
+CGFloat kMinimumDuration;
+BOOL kShowSkipNotice;
+BOOL kShowButtonsInPlayer;
+BOOL kHideStartEndButtonInPlayer;
+BOOL kShowModifiedTime;
+BOOL kSkipAudioNotification;
+BOOL kEnableSkipCountTracking;
+CGFloat kSkipNoticeDuration;
 
 #define VERSION_STRING [[NSString stringWithFormat:@"%@", @(OS_STRINGIFY(TWEAK_VERSION))] stringByReplacingOccurrencesOfString:@"\"" withString:@""]
 #define SHOW_RELAUNCH_YT_SNACKBAR [[%c(GOOHUDManagerInternal) sharedInstance] showMessageMainThread:[%c(YTHUDMessage) messageWithText:LOC(@"RESTART_YOUTUBE")]]
