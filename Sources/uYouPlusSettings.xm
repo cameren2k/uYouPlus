@@ -94,6 +94,10 @@ NSArray *copyKeys = @[
     // YTUHD Keys - https://github.com/PoomSmart/YTUHD/blob/master/Header.h
     @"EnableVP9",
     @"AllVP9",
+		@"VP9DecodeThreads",
+		@"VP9SkipLoopFilter",
+		@"VP9LoopFilterOptimization",
+		@"VP9RowThreading",
     // YouTube Keys
     @"inline_muted_playback_enabled"
 ];
