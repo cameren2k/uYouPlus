@@ -39,7 +39,7 @@ NSArray *copyKeys = @[
     kHideClipButton,
     kHideDownloadButton,
     kStockVolumeHUD,
-		kReplaceYTDownloadWithuYou,
+    kReplaceYTDownloadWithuYou,
     // UYOUPLUS - Video controls overlay Keys
     kHideAutoplaySwitch,
     kHideCC,
