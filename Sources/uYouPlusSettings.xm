@@ -83,7 +83,10 @@ NSArray *copyKeys = @[
     @"DEMC_limitZoomToFill", @"DEMC_enableForAllVideos",
     // Return YouTube Dislikes Keys - https://github.com/PoomSmart/Return-YouTube-Dislikes/blob/main/TweakSettings.h
     @"RYD-ENABLED", @"RYD-VOTE-SUBMISSION", @"RYD-EXACT-LIKE-NUMBER", @"RYD-EXACT-NUMBER",
-    // YTVideoOverlay Keys - https://github.com/therealFoxster/DontEatMyContent/blob/master/Tweak.h
+    // YTABConfig Keys
+		@"EnabledYTABC",
+		@"GroupedYTABC",
+		// YTVideoOverlay Keys - https://github.com/therealFoxster/DontEatMyContent/blob/master/Tweak.h
     @"YTVideoOverlay-YouMute-Enabled", @"YTVideoOverlay-YouQuality-Enabled", 
     @"YTVideoOverlay-YouMute-Position", @"YTVideoOverlay-YouQuality-Position",
     // YouPiP Keys - https://github.com/PoomSmart/YouPiP/blob/main/Header.h
