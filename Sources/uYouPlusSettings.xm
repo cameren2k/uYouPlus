@@ -96,9 +96,11 @@ NSArray *copyKeys = @[
     // YTABConfig Keys
     @"EnabledYTABC",
     @"GroupedYTABC",
-    // YTVideoOverlay Keys - https://github.com/therealFoxster/DontEatMyContent/blob/master/Tweak.h
-    @"YTVideoOverlay-YouMute-Enabled", @"YTVideoOverlay-YouQuality-Enabled", 
-    @"YTVideoOverlay-YouMute-Position", @"YTVideoOverlay-YouQuality-Position",
+    // YTVideoOverlay Keys - https://github.com/PoomSmart/YTVideoOverlay/blob/master/Tweak.h
+    @"YTVideoOverlay-YouMute-Enabled", @"YTVideoOverlay-YouQuality-Enabled", @"YTVideoOverlay-YouSpeed-Enabled", @"YTVideoOverlay-YouTimeStamp-Enabled",
+    @"YTVideoOverlay-YouMute-Position", @"YTVideoOverlay-YouQuality-Position", @"YTVideoOverlay-YouSpeed-Position, @"YTVideoOverlay-YouTimeStamp-Position",
+		@"YTVideoOverlay-YouMute-Order", @"YTVideoOverlay-YouQuality-Order", @"YTVideoOverlay-YouSpeed-Order", @"YTVideoOverlay-YouTimeStamp-Order",
+		@"YSMS", @"YSFNS",
     // YouPiP Keys - https://github.com/PoomSmart/YouPiP/blob/main/Header.h
     @"YouPiPEnabled", @"CompatibilityModeKey", @"PiPActivationMethodKey", @"PiPActivationMethod2Key", 
     @"PiPAllActivationMethodKey", @"NoMiniPlayerPiPKey", @"NonBackgroundableKey",
