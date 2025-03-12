@@ -81,7 +81,7 @@ NSArray *copyKeys = @[
     // DontEatMyContent Keys - https://github.com/therealFoxster/DontEatMyContent/blob/master/Tweak.h
     @"DEMC_enabled", @"DEMC_colorViewsEnabled", @"DEMC_safeAreaConstant", @"DEMC_disableAmbientMode", 
     @"DEMC_limitZoomToFill", @"DEMC_enableForAllVideos",
-		// iSponsorBlock Keys
+    // iSponsorBlock Keys
     // kIsEnabled,
     // kCategorySettings,
     // kMinimumDuration,
@@ -99,8 +99,8 @@ NSArray *copyKeys = @[
     // YTVideoOverlay Keys - https://github.com/PoomSmart/YTVideoOverlay/blob/master/Tweak.h
     @"YTVideoOverlay-YouMute-Enabled", @"YTVideoOverlay-YouQuality-Enabled", @"YTVideoOverlay-YouSpeed-Enabled", @"YTVideoOverlay-YouTimeStamp-Enabled",
     @"YTVideoOverlay-YouMute-Position", @"YTVideoOverlay-YouQuality-Position", @"YTVideoOverlay-YouSpeed-Position, @"YTVideoOverlay-YouTimeStamp-Position",
-		@"YTVideoOverlay-YouMute-Order", @"YTVideoOverlay-YouQuality-Order", @"YTVideoOverlay-YouSpeed-Order", @"YTVideoOverlay-YouTimeStamp-Order",
-		@"YSMS", @"YSFNS",
+    @"YTVideoOverlay-YouMute-Order", @"YTVideoOverlay-YouQuality-Order", @"YTVideoOverlay-YouSpeed-Order", @"YTVideoOverlay-YouTimeStamp-Order",
+    @"YSMS", @"YSFNS",
     // YouPiP Keys - https://github.com/PoomSmart/YouPiP/blob/main/Header.h
     @"YouPiPEnabled", @"CompatibilityModeKey", @"PiPActivationMethodKey", @"PiPActivationMethod2Key", 
     @"PiPAllActivationMethodKey", @"NoMiniPlayerPiPKey", @"NonBackgroundableKey",
