@@ -83,3 +83,6 @@
 [submodule "Tweaks/YouSlider"]
 	path = Tweaks/YouSlider
 	url = https://github.com/PoomSmart/YouSlider
+[submodule "Tweaks/YTIcons"]
+	path = Tweaks/YTIcons
+	url = https://github.com/PoomSmart/YTIcons.git
