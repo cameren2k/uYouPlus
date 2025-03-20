@@ -8,12 +8,12 @@ on:
     inputs:
       uyou_version:
         description: "The version of uYou"
-        default: "3.0.4"
+        default: "3.0.3"
         required: true
         type: string
       uyou_url:
         description: "The URL for download uYou"
-        default: ""
+        default: "https://something.url/uyou.deb"
         required: false
         type: string
       decrypted_youtube_url:
