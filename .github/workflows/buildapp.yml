@@ -13,7 +13,7 @@ on:
         type: string
       uyou_url:
         description: "The URL for download uYou"
-        default: "https://something.url/uyou.deb"
+        default: ""
         required: false
         type: string
       decrypted_youtube_url:
